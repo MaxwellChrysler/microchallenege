@@ -10,6 +10,18 @@ If the numbers are the same, return `"The numbers are the same!"`.
 ### Example 1
 
 ```js
+
+function compare (firstNumber, secondNumber){
+    if (firstNumber>secondNumber){
+        return "the first number was bigger";
+    }
+    else if (furstNumber<secondNumber){
+     return "the second number was bigger";
+    }
+    else {
+        return "the numbers are the same!"
+    }
+}
 let result = yourFunction(3, 2)
 console.log(result);
 ```
@@ -39,11 +51,22 @@ The second number was bigger!
 ```js
 let result = yourFunction(7, 7);
 console.log(result);
-```
-
-should log
 
 
-```
-The numbers are the same!
-```
+function compare (firstNumber, secondNumber){
+    if (firstNumber>secondNumber){
+        return "the first number was bigger!";
+    }
+    else if (firstNumber<secondNumber){
+     return "the second number was bigger!";
+    }
+    else {
+        return "the numbers are the same!"
+    }
+}
+let result = compare(3, 2)
+console.log(result);
+result = compare(2, 7)
+console.log(result);
+result = compare(7, 7);
+console.log(result);

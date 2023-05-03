@@ -9,7 +9,10 @@ Your function should return the sum of the two numbers passed in.
 ### Example 1
 
 ```js
-let result = yourFunction(2, 3);
+function sum (firstNumber, secondNumber){
+    return firstNumber + secondNumber;
+}
+let result = sum(2, 3);
 console.log(result);
 ```
 
@@ -22,7 +25,7 @@ should log
 ### Example 2
 
 ```js
-let result = yourFunction(2, 7);
+let result = sum(2, 7);
 console.log(result);
 ```
 
